@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudando Cores</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .laranja {
+            background-color: rgb(153, 106, 19);
+            transition: all 0.25s ease-in-out;
+        }
+
+        .vermelho {
+            background-color: rgb(156, 12, 12);
+            transition: all 0.25s ease-in-out;
+        }
+
+        .azul {
+            background-color: rgb(118, 160, 174);
+            transition: all 0.25s ease-in-out;
+        }
+
+        button {
+            padding: 10px;
+            border: 0px;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 300;
+            margin: 0 10px;
+        }
+
+        div#container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            min-width: 90vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button class="laranja" id="btn-laranja">Laranja</button>
+        <button class="vermelho" id="btn-vermelho">Vermelho</button>
+        <button class="azul" id="btn-azul">Azul</button>
+    </div>
+
+    <script src="aula03.js"></script>
+</body>
+</html>
